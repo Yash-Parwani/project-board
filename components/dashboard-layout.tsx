@@ -62,14 +62,6 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           <SidebarTrigger />
           <div className="w-full flex items-center justify-between">
             <div className="relative w-full max-w-md">
-              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-              <Input
-                type="search"
-                placeholder="Search tasks, projects, or team members..."
-                className="w-full bg-background pl-8 md:w-[300px] lg:w-[400px]"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
             </div>
             <div className="flex items-center gap-4">
               <ModeToggle />
